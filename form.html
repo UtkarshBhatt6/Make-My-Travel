@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make My Travel</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your request has been successfully submitted.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error Submitting the form!</strong> Your request has not been submitted due to errors in form.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container">
+
+        <h1>Travel Desk</h1>
+        <form>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <div id="nameValid" class="form-text text-muted invalid-feedback">Your name must begin with alphabet and must be within 2-10 characters long</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="name@example.com">
+                <div id="emailValid" class="form-text text-muted invalid-feedback">Your email must be valid email</div>
+
+            </div>
+            <div class="mb-3">
+                <label for="car" class="form-label">Select your preffered car</label>
+                <select class="form-control" id="car">
+                    <option>Ford Titanium</option>
+                    <option>Maruti Zuzuki Omni</option>
+                    <option>Tata Sumo</option>
+                    <option>Maruti Zuzuki Swift</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Enter your phone number</label>
+                <input class="form-control" id="phoneNumber" rows="1"></input>
+                <div id="phoneValid" class="form-text text-muted invalid-feedback">Your phone number must be 10 digit long</div>
+
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Enter your address</label>
+                <textarea class="form-control" id="address" rows="2"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="Queries" class="form-label">Any Other Queries</label>
+                <textarea class="form-control" id="Queries" rows="3"></textarea>
+            </div>
+            <button id="submit" class="btn btn-primary">submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+        <script src="form.js"></script>
+</body>
+
+</html>
